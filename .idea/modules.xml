@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ExceptionJava.iml" filepath="$PROJECT_DIR$/ExceptionJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminars/Seminar01/HW01/HW01.iml" filepath="$PROJECT_DIR$/Seminars/Seminar01/HW01/HW01.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminars/Seminar02/HW02/HW02.iml" filepath="$PROJECT_DIR$/Seminars/Seminar02/HW02/HW02.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Seminars/Seminar03/HW03/HW03.iml" filepath="$PROJECT_DIR$/Seminars/Seminar03/HW03/HW03.iml" />
     </modules>
   </component>
 </project>
