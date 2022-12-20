@@ -20,14 +20,25 @@ public class Main {
         // методы вызывающие исключения
         // metod1();
         // metod2();
-        //metod3();
+        // metod3();
 
-        int [] ar1 = new int[] {10, 12, 14, 45, 5};
-        int [] ar2 = new int[] {12, 8, 5, 45};
+        int [] ar1 = new int[] {10, 12, 14, 45};
+        int [] ar2 = new int[] {12, 8, 5, 12};
         int[] ar3 = differenceArray(ar1, ar2);
+        double [] ar4 = divisionArray(ar1, ar2);
 
-        for (int i = 0; i < ar3.length; i++){
+        System.out.println("Массив разность: ");
+        int i = 0;
+        while (i < ar3.length) {
             System.out.print(ar3[i] + ", ");
+            i++;
+        }
+
+        System.out.println("Массив деление: ");
+        i = 0;
+        while (i < ar4.length) {
+            System.out.print(ar4[i] + ", ");
+            i++;
         }
     }
 
@@ -55,6 +66,20 @@ public class Main {
         int[] rez = new int[a.length];
         for (int i = 0; i < a.length; i++){
             rez[i] = a[i] - b[i];
+        }
+        return rez;
+    }
+
+    public static double[] divisionArray(int[] a, int[] b){
+        if (a.length != b.length){
+            throw new RuntimeException("Разное количество элементов в массива, операция не возможна!");
+        }
+        double[] rez = new double[a.length];
+        for (int i = 0; i < a.length; i++){
+            if (b[i] == 0){
+                throw new RuntimeException("Деление на ноль!");
+            }
+            rez[i] = (double)a[i] / (double)b[i];
         }
         return rez;
     }
